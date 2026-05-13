@@ -1,22 +1,26 @@
+if game.Players.LocalPlayer.Name ~= "maklp90" then
+	return
+end
+
 local movementInstances = {
-    "BodyVelocity",
-    "BodyPosition",
-    "BodyGyro",
-    "BodyForce",
-    "BodyAngularVelocity",
-    "BodyThrust",
-    "VectorForce",
-    "LinearVelocity",
-    "AngularVelocity",
-    "AlignPosition",
-    "AlignOrientation",
-    "RocketPropulsion",
-    "Torque",
-    "Attachment"
+	"BodyVelocity",
+	"BodyPosition",
+	"BodyGyro",
+	"BodyForce",
+	"BodyAngularVelocity",
+	"BodyThrust",
+	"VectorForce",
+	"LinearVelocity",
+	"AngularVelocity",
+	"AlignPosition",
+	"AlignOrientation",
+	"RocketPropulsion",
+	"Torque",
+	"Attachment"
 }
 
 for _,v in pairs(movementInstances) do
-    Instance.new(v, workspace)
+	Instance.new(v, workspace)
 end
 
 local player = game.Players.LocalPlayer
