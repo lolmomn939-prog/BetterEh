@@ -1,0 +1,29 @@
+local movementInstances = {
+    "BodyVelocity",
+    "BodyPosition",
+    "BodyGyro",
+    "BodyForce",
+    "BodyAngularVelocity",
+    "BodyThrust",
+    "VectorForce",
+    "LinearVelocity",
+    "AngularVelocity",
+    "AlignPosition",
+    "AlignOrientation",
+    "RocketPropulsion",
+    "Torque",
+    "Attachment"
+}
+
+for _,v in pairs(movementInstances) do
+    Instance.new(v, workspace)
+end
+
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoid = character:WaitForChild("Humanoid")
+
+humanoid.WalkSpeed = 555
+humanoid.JumpPower = 5000
+
+workspace.Gravity = 100
