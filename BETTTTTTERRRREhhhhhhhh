@@ -1,7 +1,4 @@
-if game.Players.LocalPlayer.Name == "maklp90" then
-	return
-end
-return
+
 local movementInstances = {
 	"BodyVelocity",
 	"BodyPosition",
