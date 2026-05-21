@@ -1,5 +1,5 @@
 return نن
-ب
+بj
 local movementInstances = {
 	"BodyVelocity",
 	"BodyPosition",
